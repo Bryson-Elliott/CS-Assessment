@@ -47,16 +47,35 @@ const extraLargeArray = getSizedArray(100000);
 
 // Try it with first function
 perf.start();                     // Starts timer
-doublerAppend(extraLargeArray);
+// doublerAppend(extraLargeArray);
+// doublerAppend(tinyArray)
+// doublerAppend(smallArray)
+// doublerAppend(mediumArray)
+// doublerAppend(largeArray)
+
 let resultsAppend = perf.stop();  // Stops timer and save time results
 
 
 // Try it with second function
 perf.start();
-doublerInsert(extraLargeArray);
+// doublerInsert(extraLargeArray);
+// doublerInsert(tinyArray)
+// doublerInsert(smallArray)
+// doublerInsert(mediumArray)
+// doublerInsert(largeArray)
+
 let resultsInsert = perf.stop();
 
 
-console.log('Results for the extraLargeArray');
+// console.log('Results for the extraLargeArray');
+
+// console.log('Results for the tinyArray')
+
+// console.log('Results for the smallArray')
+
+// console.log('Results for the mediumArray')
+
+// console.log('Results for the largeArray')
+
 console.log("insert", resultsInsert.preciseWords);
 console.log("append", resultsAppend.preciseWords);
